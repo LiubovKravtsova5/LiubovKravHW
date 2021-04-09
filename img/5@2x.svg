@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+		.txt1 { font-size: 16px;line-height: 42px;fill: #b2b2b2;font-family: "Font Awesome";text-anchor: end } 
+	</style>
+	<g id="Footer">
+		<g id="Copyright">
+			<g id="Social Icon">
+				<g id="5">
+					<path id="Rectangle 14" class="shp0" d="M0 0L64 0L64 64L0 64L0 0Z" />
+					<text id=" " style="transform: matrix(2,0,0,2,22,44)" >
+						<tspan x="0" y="0" class="txt1" dx="0" ></tspan>
+					</text>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
