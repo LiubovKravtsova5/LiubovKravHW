@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
 }
 body {
     font-family: Lato;
@@ -20,12 +21,7 @@ body {
     margin: 30px auto 0px auto;
     display: flex;
 }
-.box{
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: left;       
-}
+
 .heading-first{
     text-transform: uppercase;
     font-size: 60px;
@@ -58,7 +54,12 @@ body {
     font-weight: 700;
 }
 
-
+.header-left{
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;       
+}
 .galery-text{
     text-transform: uppercase;
     font-size: 18px;
@@ -83,7 +84,7 @@ body {
     height: 51px;
     margin-right: 36px;
 }
-.search-container{
+.header-form{
     display: flex;
     align-items: center;
 }
@@ -99,7 +100,7 @@ body {
     
 }
 
-.search-container input[type="text"]{
+.header-form input[type="text"]{
     width: 317px;
     height: 38px;
     border-radius: 3px;
@@ -109,12 +110,20 @@ body {
 }
 
 .loupe {
-    height: 30px;
-    width: 30px;
-    background-color: #f16d7f;
+    height: 40px;
+    width: 40px;
+    
  }
+button.loupe:hover{    
+    background-color: #ffffff;
+}
 
-
+.header-right{    
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;   
+}
 .basket { 
     display: block;
     margin: 25px;
@@ -138,19 +147,89 @@ body {
     color: #222222;
     font-weight: 700;
  }
- .menu-cell{
-     padding: 20px 25px;
+ .menu-list{
+    list-style-type: none; 
+ }
+ .menu-list:hover .mega-box{
+    display : flex;
+ }
+ .menu-link{
+     text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+     position: relative;
+     color: #222222;  
+     font-size: 14px;
+     font-weight: 700;
      text-transform: uppercase;
  }
- .main-illustration{
-   background-color: #e8e8e8;
+ .mega-link{
+    text-decoration: none;
+      
  }
- .illustration{
-    box-sizing: border-box;
+ .mega-box{    
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+ }
+ .mega-box::before{
+     content: "";
+     display: block;
+     width: 12px;
+     height: 12px;
+     background-color: #fff;
+     position: absolute;
+     top: -8px;
+     left: 36px;
+     transform: rotate( 45deg );
+     border-left: 1px solid #e8e8e8;
+     border-top: 1px solid #e8e8e8;;
+ }
+ .item-heading{
+    width: 235px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+ }
+ .mega-item{
+    margin-right: 45px;
+ }
+ .mega-item:last-of-type{
+     margin-right: 0;
+ }
+ .mega-list{
+    list-style-type: none;
+ }
+ .mega-link{
+     display: block;
+    color: #646464;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+ }
+ .mega-link:hover {
+     color: #f16d7f;
+ }
+ .banner{
+    background-color: #e8e8e8;
+    height: 613px;
+ }
+ .banner-block{
+    height: 100%;
     width: 100%;
-    text-align: center;
+    background-image: url(img/banner.jpg);
+    background-size: auto;
+    background-position: center -52px;
+ 
  }
- .main-illustration-heading{
+ .banner-illustration-heading{
      max-width: 500px;
     align-self: center;
     position: absolute;
@@ -177,8 +256,7 @@ body {
 .less-galery-box-left{
     width: 100%;
    padding-bottom:50%;
-    border: 1px solid red;
-    background-color: #dadad2;
+  background-color: #dadad2;
     background-image: url(img/Layer\ 37@2x.png);
     background-position: right bottom 10px;
     background-repeat: no-repeat;
@@ -216,7 +294,7 @@ body {
     margin-right: 20px;
     
 }
-.column :last-child{
+.column:last-of-type{
     margin-right: 0;
 }
 
@@ -283,18 +361,25 @@ text-align: left;
     padding: 0 13px;
     text-align: left;
 }
-
+button {
+    outline: none;
+}
 .button {
-    width: 130px;
-    height: 38px;
+    padding: 11px 20px;
     background-color: #f16d7f;
     text-align: center;
     font-size: 15px;
     letter-spacing: 0px;
-    line-height: 32px;
+    line-height: 15px;
     color: #ffffff;
     font-weight: 400;
     font-family: "Lato";
+    border: 1px solid #f16d7f;
+}
+
+button.account:hover{
+    background-color:#ffffff;
+    color: #f16d7f;
 }
 .button-products-box{
     overflow: auto;
