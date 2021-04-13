@@ -185,7 +185,7 @@
     </div>
 
     <div class="button-products-box">
-        <button class="button-products">Browse All Product</button>
+        <button href="#" class="button-products">Browse All Product</button>
     </div>
 
     <div class="container">
@@ -198,8 +198,8 @@
                 <div class="offer-illustration"></div>
                 <div class="offer-text-block">
                     <div class="text">
-                        <p class="heading-third">30% </p>
-                        <p class="heading-third pink">OFFER</p>
+                        <h3>30% <h3>
+                                <h3 class="pink"> OFFER</h3>
                     </div>
 
                     <p class="offer-text">FOR WOMEN</p>
@@ -267,9 +267,9 @@
                         <div class="signature">Bin Burhan</div>
                         <p>Dhaka, Bd </p>
                         <div class="strips">
-                            <button class="strip">1</button>
-                            <button class="strip">2</button>
-                            <button class="strip">3</button>
+                            <button href="#" class="strip">1</button>
+                            <button href="#" class="strip">2</button>
+                            <button href="#" class="strip">3</button>
                         </div>
                     </div>
                 </div>
@@ -278,9 +278,10 @@
                         <div class="subscribe-header">Subscribe</div>
                         <div class="subscribe-caption"> FOR OUR NEWLETTER AND PROMOTION</div>
                     </div>
+
                     <div class="form">
-                        <p>Enter Your Email</p>
-                        <div class="subscribe-button"></div>
+                        <input type="text" placeholder="Enter Your Email" name="e-mail">
+                        <button href="#" class="subscribe-button">subscribe</button>
                     </div>
                 </div>
             </div>
@@ -288,56 +289,85 @@
         </div>
     </div>
     <div class="container">
-        <div>
-            <div class="logo"></div>
-            <div class="brand-info">Objectively transition extensive data rather than cross functional
-                solutions.
-                Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
-                syndicate
-                an expanded array of processes and cross-unit partnerships.
 
-                Efficiently plagiarize 24/365 action items and focused infomediaries.
-                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</div>
-            <div class="column ">
-                <div class="column-header">COMPANY </div>
-                <div class="column-paragraph">paragraph1</div>
-                <div class="column-paragraph">paragraph2</div>
-                <div class="column-paragraph">paragraph3</div>
-                <div class="column-paragraph">paragraph4</div>
-                <div class="column-paragraph">paragraph5</div>
-            </div>
-            <div class="column ">
-                <div class="column-header">COMPANY </div>
-                <div class="column-paragraph">paragraph1</div>
-                <div class="column-paragraph">paragraph2</div>
-                <div class="column-paragraph">paragraph3</div>
-                <div class="column-paragraph">paragraph4</div>
-                <div class="column-paragraph">paragraph5</div>
-            </div>
-            <div class="column ">
-                <div class="column-header">COMPANY </div>
-                <div class="column-paragraph">paragraph1</div>
-                <div class="column-paragraph">paragraph2</div>
-                <div class="column-paragraph">paragraph3</div>
-                <div class="column-paragraph">paragraph4</div>
-                <div class="column-paragraph">paragraph5</div>
-            </div>
-        </div>
+        <nav class="footer-nav">
+            <div class="column-box">
+                <div class="footer-column">
+                    <div class="footer-info">
+                        <h3><img class="brand-logo" href="#" src="img/BRAND.svg" alt="brand-logo"> </h3>
+                        <div class="brand-info">Objectively transition extensive data rather than cross functional
+                            solutions.
+                            Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                            syndicate
+                            an expanded array of processes and cross-unit partnerships.
 
-        <div>
-            <div class="copyright">copyright</div>
-            <div class="social-networks">
-                <div class="sn-ico">sn-ico1</div>
-                <div class="sn-ico">sn-ico2</div>
-                <div class="sn-ico">sn-ico3</div>
-                <div class="sn-ico">sn-ico4</div>
-                <div class="sn-ico">sn-ico5</div>
+                            Efficiently plagiarize 24/365 action items and focused infomediaries.
+                            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>company</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="#">Tearms &amp; Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">How to Buy</a></li>
+                        <li><a href="#">How to Sell</a></li>
+                        <li><a href="#">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>shop category</h3>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Child</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Brows All</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        // test git //
-
+        </nav>
     </div>
+
+    <div>
+        <div class="copyright ">
+            ©
+            <div id="year-block"></div>
+            <script type="text/javascript">
+                /* функция получения текущей даты и времени */
+                function date_time() {
+                    var current_datetime = new Date();
+                    var year = current_datetime.getFullYear();
+                    return year;
+                }
+                /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+                document.getElementById('year-block').innerHTML = date_time();
+            </script>
+            Brand All Rights Reserved
+        </div>
+
+        <div class="social-networks">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        </div>
+    </div>
+
     </div>
 
 </body>
