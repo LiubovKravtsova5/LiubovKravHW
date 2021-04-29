@@ -3,6 +3,11 @@
     padding: 0;
     outline: none;
 }
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;}
+
 body {
     font-family: Lato;
     font-style: normal;
@@ -21,9 +26,26 @@ body {
     margin: 0px auto 0px auto;
     display: flex;
 }
-
+.custom-container_one-column{
+    overflow: auto;
+    max-width: 1140px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box__displeyFlex__jc-center{
+    display: flex;
+    justify-content: center;
+}
 .margin-bottom__100px{
     margin-bottom: 100px;
+}
+.margin-top__100px{
+    margin-top: 100px;
+}
+.weidth_100{
+    width: 100%;
 }
 
 h1 {
@@ -63,6 +85,10 @@ h4 {
     align-items: center;
     justify-content: left;       
 }
+.img__cover{
+    object-fit: cover;
+}
+
 .galery-text{
     text-transform: uppercase;
     font-size: 18px;
@@ -97,7 +123,6 @@ h4 {
     border-radius: 3px;     
     align-items: center;
     justify-content: center;
-    height: 38px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
@@ -184,12 +209,7 @@ button.loupe:hover{
     align-items: center;
     justify-content: right;   
 }
-.basket { 
-    display: block;
-    margin: 25px;
-    height: 30px;
-    vertical-align: text-bottom;
-}
+
 
 .account { 
     color: #ffffff;
@@ -313,9 +333,203 @@ button.loupe:hover{
  .mega-link:hover {
      color: #f16d7f;
  }
- .mega-item__sale-img{
 
+ .Page-header {
+  background-color: #f8f3f4;
+      display: block;
+      height: 148px;
+      padding: 65px auto;
+ 
+   }
+  .custom-container_height-148{
+      height: 148px;
+  }
+ .Page-title {
+  
+      display: flex;
+      justify-content: left;
+      align-items: center;
+     color: #f16d7f;
+     font-family: "Lato - Black";
+     font-size: 24px;
+     font-weight: 400;
+     line-height: 20px;
+     text-transform: uppercase;
+   }
+ .breadcrumb {
+    font-size: 14px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      list-style: none;
+      color: #636363;
+      font-family: "Lato Light";
+      font-weight: 300;  
+      margin: 0; 
  }
+       
+ .breadcrumb a{
+   text-decoration: none;
+   color: #636363;
+ font-family: "Lato Light";
+ font-weight: 300;
+ font-style: normal;
+ letter-spacing: normal;
+ line-height: normal;
+ 
+ }
+ .breadcrumb a:hover {
+    color: #f16d7f;
+ }
+  .active {
+    color: #f16d7f;
+    font-family: "Lato - Bold";
+ font-weight: 700;
+ font-style: normal;
+ letter-spacing: normal;
+ line-height: normal; 
+}
+.custom-carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-arrow{
+    border: none;
+    width: 47px;
+    height: 47px;    
+    background-color: #2a2a2a;
+}
+.carousel-arrow:hover{
+    background-color: #f16d7f;
+
+}
+.carusel-fas{    
+    font-size: 14px;
+    color: #fff;
+}
+.custom-container__jc-center {
+    border: 2px solid blue;
+    flex-direction: column;
+    justify-content: center;   
+}
+.grey-border {
+    border: 1px solid #eaeaea;
+}
+  
+.collection{
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 618px;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.collection-type {
+    padding-top: 70px;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+.collection-slogan {
+    margin-top: 18px;
+    color: #4d4d4d;
+    font-family: "Lato - Black";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-description {   
+    margin-top: 28px;
+    margin-right: 50px;
+    display: inline-flex;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+    width: 620px;
+ }
+ .materialAndDesigner{
+    display: flex;
+    justify-content: center;
+}
+ .feature-name {
+     margin-top: 28px;
+     margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+ .feature { 
+    color: #b9b9b9;
+ }
+ .name { 
+    color: #2f2f2f;
+ }
+.productCard-price {
+    margin: 40px auto;
+    color: #ef5b70;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;     
+}
+
+.order { 
+    margin: 60px  auto 120px auto ;
+    width: 537px;
+}
+.order-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.order-card{
+    display: flex;
+    flex-direction: column;
+}
+.form-text{
+    color: #2f2f2f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.custom-button__addToCart{
+    justify-content: center;
+    width: 100%;
+ }
+.custom-button__addToCart p{
+    padding-left: 15px;
+}
  .banner{
     background-color: #e8e8e8;
     height: 613px;
@@ -338,48 +552,33 @@ button.loupe:hover{
 }       
 
 
-.bigger-galery-box-left{
-   width: 100%;
-   padding-bottom:97%;
-  
-    background-image: url(img/Layer\ 30@2x.jpg);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    margin-bottom: 20px;
-    
-}
-.less-galery-box-left{
+.galery-box{
     width: 100%;
-   padding-bottom:50%;
-  background-color: #dadad2;
-    background-image: url(img/Layer\ 37@2x.png);
-    background-position: right bottom 10px;
     background-repeat: no-repeat;
-    background-size: 80%;
-    margin-bottom: 20px;
-    
-}
-.bigger-galery-box-right{
-    width: 100%;
+    background-size: cover;
+    margin-bottom: 20px;     
+ }
+
+.galery-box__bigger_left{
     padding-bottom:97%;
-         background-image: url(img/Layer\ 31@2x.jpg);
-     background-position: top left;
-     background-repeat: no-repeat;
-     background-size: 100%;
-     margin-bottom: 20px;
-     
- }
- .less-galery-box-right{
-    width: 100%;
+     background-image: url(img/galery1.jpg);
+       
+}
+.galery-box__less_left{
     padding-bottom:50%;
-   background-color: #dadad2;
-     background-image: url(img/Layer32.jpg);
-     background-position: right bottom 10px;
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin-bottom: 20px;   
- }
+    background-color: #dadad2;
+    background-image: url(img/galery2.jpg);
+    background-position: right bottom 10px;    
+}
+.galery-box__bigger_right{
+    padding-bottom:97%;
+    background-image: url(img/galery4.jpg);       
+}
+.galery-box__less_right{
+    padding-bottom:50%;
+    background-color: #dadad2;
+    background-image: url(img/galery3.jpg);    
+}
 .column { 
     display: flex;
     flex-direction: column;
@@ -505,7 +704,7 @@ button.loupe:hover{
     padding: 11px 20px;
     background-color: #f16d7f;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0px;
     line-height: 15px;
     color: #ffffff;
@@ -519,6 +718,24 @@ button.loupe:hover{
 .custom-button:hover {
     background-color: #ffffff;
     color: #f16d7f;
+}
+.fas-button{
+    display: flex;
+    outline: none;
+    padding: 11px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    color: #f16d7f;
+    font-weight: 400;
+    font-family: "Lato";
+    border: 1px solid #f16d7f;
+}
+.fas-button:hover{
+    color: #ffffff;
+    background-color: #f16d7f;
 }
 
 .button-products {
@@ -620,7 +837,7 @@ button.loupe:hover{
 .ava { 
     size: 100%;
     height: 85px;  
-    
+    border-radius: 50%;
 }
 .accost-box{
     padding-left: 28px;
@@ -645,7 +862,12 @@ button.loupe:hover{
     margin-top: 40px; 
     display: flex;
 }
-.strip { 
+.strips_product-card{
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+.strip-item__product-card { 
     padding: 0;
     width: 38px;
     height: 4px;
@@ -653,8 +875,13 @@ button.loupe:hover{
     border: none;
     color: #d6d6d6;
     margin-right: 12px;
+    width: 63px;
 }
-.strip:hover {
+.strip-item__product-card:hover {
+    background-color: #f16d7f;
+}
+
+.strip-item__product-card:hover{
     background-color: #f16d7f;
 }
 .right-column {
