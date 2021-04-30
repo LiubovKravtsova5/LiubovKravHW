@@ -41,6 +41,9 @@ body {
 .margin-bottom__100px{
     margin-bottom: 100px;
 }
+.margin-bottom__20px{
+    margin-bottom: 20px;
+}
 .margin-top__100px{
     margin-top: 100px;
 }
@@ -102,7 +105,12 @@ h4 {
 .img__cover{
     object-fit: cover;
 }
-
+.galery-text-block{    
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 25px;
+    padding: 18px 20px;
+}
 .galery-text{
     text-transform: uppercase;
     font-size: 18px;
@@ -116,6 +124,16 @@ h4 {
     letter-spacing: 0px;
     color: #f16d7f;
     font-weight: 900; 
+}
+.galery2_background{
+    width: 100%;
+    height: 260px;
+    background-color: #dadad2;
+}
+.galery2__position{
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .text_pink{
     color: #f16d7f;
@@ -570,45 +588,20 @@ button.loupe:hover{
 }       
 
 
-.galery-box{
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;     
- }
-
-.galery-box__bigger_left{
-    padding-bottom:97%;
-     background-image: url(img/galery1.jpg);
-       
-}
-.galery-box__less_left{
-    padding-bottom:50%;
-    background-color: #dadad2;
-    background-image: url(img/galery2.jpg);
-    background-position: right bottom 10px;    
-}
-.galery-box__bigger_right{
-    padding-bottom:97%;
-    background-image: url(img/galery4.jpg);       
-}
-.galery-box__less_right{
-    padding-bottom:50%;
-    background-color: #dadad2;
-    background-image: url(img/galery3.jpg);    
-}
-.column { 
-    display: flex;
+.custom_column { 
+     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
-    margin-right: 20px;
-    
+    margin-right: 20px;    
 }
-.column:last-of-type{
+.custom_column:last-of-type{
     margin-right: 0;
 }
-
+.galery-img{
+    width: 100%; 
+    position: relative;
+ }
 
 
 .ofer-img1{
@@ -623,13 +616,6 @@ button.loupe:hover{
     padding-right: -5px;
 }
 
-
-.galery-text-block{    
-    background-color: #ffffff;
-    position: absolute;
-    margin-top: 25px;
-    padding: 18px 20px;
-}
 
 .some-text{
    text-align: center;   
@@ -968,10 +954,7 @@ button.loupe:hover{
     font-weight: 300;
     line-height: 24px;
     margin-top: 1.5rem;   
- }
-
-.column-header { }
-.column-paragraph { }
+}
 
 .footer-nav{
     display: flex;
