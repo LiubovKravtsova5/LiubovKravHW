@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,aAAa,EAAE,IAAI;CACtB;;AAED,AAAA,qBAAqB,CAAC;EAClB,aAAa,EAAE,KAAK;CACvB;;AAED,AAAA,oBAAoB,CAAC;EACjB,aAAa,EAAE,IAAI;CACtB;;AAED,AAAA,kBAAkB,CAAC;EACf,UAAU,EAAE,KAAK;CACpB;;AAED,AAAA,WAAW,CAAC;EACR,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,cAAc,CAAC;EACX,QAAQ,EAAE,QAAQ;CACrB;;AAED,AAAA,uBAAuB,CAAC;EACpB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,KAAK;CACb",
-    "sources": [
-        "marginsAndPaddings.scss"
-    ],
-    "names": [],
-    "file": "marginsAndPaddings.css"
-}
