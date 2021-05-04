@@ -1,0 +1,12 @@
+.shopCart{
+    &-item{
+        height: 115px;
+        width: 100%;
+        display: flex;
+        margin: 25px auto;
+        justify-content: space-between;
+        &_shape{
+           display: flex;
+       }
+    }
+}
