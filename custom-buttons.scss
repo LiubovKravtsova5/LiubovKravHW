@@ -64,3 +64,32 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+.shopCart-button{
+    padding: 20px 40px;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    &:hover{
+        color: #f16d7f;
+        border-color: #f16d7f;
+    }
+}
+.order-form__item{
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 16px 18px;
+}
+
+.order-form__button{
+    display: block;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 12px 15px;
+    width: fit-content;
+    &:hover{
+        color: #f16d7f;
+        border-color: #f16d7f;
+    }
+}

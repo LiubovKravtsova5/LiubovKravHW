@@ -125,4 +125,128 @@ h4 {
   font-size: 14px;
   font-weight: 300;
 }
+
+.unit .fa-times-circle {
+  font-size: 15px;
+}
+
+.unit-price {
+  color: #656565;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.unit-name {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.unit-text {
+  color: #656565;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.unit-text_boild {
+  color: #6f6e6e;
+  font-family: "Lato - Regular";
+  font-weight: 400;
+}
+
+.unit-text_regular {
+  color: #575757;
+  font-family: "Lato Light";
+  font-weight: 300;
+}
+
+.shopCart-header {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.shopCart-button {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.shipAdress__header {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.order-form__item {
+  color: #b1b1b1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.order-form__button {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.order-form label {
+  padding: 5px 0;
+  color: #000000;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.custom-button_text {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.custom-button_text:hover {
+  color: #f16d7f;
+}
+
+.subTotal {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+}
+
+.grandTotal {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+
+.grandTotal_pink {
+  color: #f16d7f;
+}
 /*# sourceMappingURL=custom-fonts.css.map */
