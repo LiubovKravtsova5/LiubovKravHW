@@ -1,3 +1,16 @@
+.color-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100px;
+  background-color: hotpink;
+  width: 500px;
+  margin: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +21,21 @@ p {
   margin: 0;
   padding: 0;
   outline: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+form em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
 }
 
 body {
@@ -262,6 +290,70 @@ h4 {
   color: #f16d7f;
 }
 
+.product-name {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 20px 15px 0 15px;
+}
+
+.product-price {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 17px 15px;
+}
+
+.checkoutPage_form-header {
+  color: #222222;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 33px;
+}
+
+.checkoutPage_text {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.check_label {
+  color: #222222;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.checkoutPage__button {
+  color: #4a4a4a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.remark_red {
+  color: #ff0d0d;
+}
+
+.pas-recovery {
+  text-decoration: none;
+  color: #222222;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 32px;
+}
+
 .p-right__15px {
   padding-right: 15px;
 }
@@ -276,6 +368,10 @@ h4 {
 
 .margin-top__100px {
   margin-top: 100px;
+}
+
+.margin-top__90px {
+  margin-top: 90px;
 }
 
 .weidth_100 {
@@ -411,6 +507,19 @@ header {
   border-color: #f16d7f;
 }
 
+.checkoutPage__button {
+  outline: none;
+  padding: 19px 55px;
+  margin-top: 32px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.checkoutPage__button:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
+
 .shopCart-img {
   width: 100px;
 }
@@ -523,6 +632,60 @@ header {
   margin-bottom: 17px;
 }
 
+.custom-accordion_ol {
+  width: 100%;
+}
+
+.custom-accordion_ol li::marker {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.accordion-item {
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 16px;
+}
+
+.accordion-button {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+.accordion-button::after {
+  background-image: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #222222;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:focus {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .custom-container {
   overflow: auto;
   -webkit-box-pack: justify;
@@ -632,9 +795,22 @@ header {
           align-items: center;
 }
 
+.browse-box {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .browse {
   display: block;
-  position: relative;
+  position: absolute;
   border-radius: 3px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -645,7 +821,6 @@ header {
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
-  padding-left: 17px;
 }
 
 .browse:hover {
@@ -661,35 +836,33 @@ header {
   color: #222222;
   font-size: 14px;
   font-weight: 300;
-  line-height: 38px;
+  line-height: 36px;
   text-align: left;
   letter-spacing: 0.35px;
+  padding-left: 15px;
 }
 
 .browse-list__box {
   position: absolute;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9e9e9;
   border-radius: 5px;
-  border: 1px solid #e8e8e8;
-  border: 1px solid #e8e8e8;
-  margin-left: -20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .browse ul {
   list-style: none;
+  background-color: #ffffff;
 }
 
 .browse li {
-  display: block;
-  color: #646464;
-  text-decoration: none;
-  font-weight: 400;
+  color: #232323;
+  font-family: Lato;
   font-size: 14px;
+  font-weight: 300;
   line-height: 28px;
-  padding: 10px 20px;
+  letter-spacing: 0.35px;
 }
 
 .browse li:hover {
@@ -843,6 +1016,14 @@ details[open] > summary::after {
   margin-bottom: 8px;
 }
 
+.browse_mega-item {
+  padding: 0px 25px 0 25px;
+}
+
+.browse_mega-item:first-of-type {
+  padding-top: 18px;
+}
+
 .mega-item {
   margin-right: 45px;
 }
@@ -964,6 +1145,7 @@ details[open] > summary::after {
 }
 
 .custom-container__jc-left {
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1244,6 +1426,11 @@ details[open] > summary::after {
   border: 1px solid #ffffff;
 }
 
+.add-link:hover {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
 .cart-ico {
   height: 23px;
   width: 23px;
@@ -1412,7 +1599,7 @@ details[open] > summary::after {
   width: 63px;
 }
 
-.strip-item__product-cardhover {
+.strip-item__product-card:hover {
   background-color: #f16d7f;
 }
 
@@ -1576,5 +1763,40 @@ details[open] > summary::after {
 
 .fab:hover {
   color: #f16d7f;
+}
+
+.double-right_ol {
+  color: #b3b2b2;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+.double-right_ol li {
+  padding-top: 15px;
+}
+
+.double-right_ol a {
+  text-decoration: none;
+  color: #b3b2b2;
+}
+
+.fa-angle-double-right {
+  padding-right: 1rem;
+}
+
+.check_label {
+  padding: 16px 0;
+}
+
+.check_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

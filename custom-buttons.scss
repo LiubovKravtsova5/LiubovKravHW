@@ -93,3 +93,14 @@
         border-color: #f16d7f;
     }
 }
+.checkoutPage__button{
+    outline: none;
+    padding: 19px 55px;
+    margin-top: 32px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    &:hover{
+        color: #f16d7f;
+        border-color: #f16d7f;
+    }
+}
