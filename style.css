@@ -820,18 +820,6 @@ header {
   padding: 18px 20px;
 }
 
-.galery2_background {
-  width: 100%;
-  height: 260px;
-  background-color: #dadad2;
-}
-
-.galery2__position {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .brand-logo {
   width: 165px;
   height: 51px;
@@ -1958,5 +1946,51 @@ details[open] > summary::after {
 
 .total-price {
   margin: 20px 0;
+}
+
+.hide-div1 {
+  width: 560px;
+  height: 542px;
+}
+
+.galery-scale1 {
+  position: absolute;
+}
+
+.galery-scale1:hover {
+  -webkit-transform: translate(-10%, -10%) scale(1.2, 1.2);
+          transform: translate(-10%, -10%) scale(1.2, 1.2);
+}
+
+.hide-div2 {
+  width: 560px;
+  height: 260px;
+}
+
+.galery-scale2 {
+  position: absolute;
+}
+
+.galery-scale2:hover {
+  -webkit-transform: translate(-10%, 10%) scale(1.2, 1.2);
+          transform: translate(-10%, 10%) scale(1.2, 1.2);
+}
+
+.galery-scale3 {
+  position: absolute;
+}
+
+.galery-scale3:hover {
+  -webkit-transform: translate(10%, -10%) scale(1.2, 1.2);
+          transform: translate(10%, -10%) scale(1.2, 1.2);
+}
+
+.galery-scale4 {
+  position: absolute;
+}
+
+.galery-scale4:hover {
+  -webkit-transform: translate(10%, 10%) scale(1.2, 1.2);
+          transform: translate(10%, 10%) scale(1.2, 1.2);
 }
 /*# sourceMappingURL=style.css.map */
