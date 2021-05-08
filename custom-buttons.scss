@@ -65,6 +65,7 @@
     text-transform: uppercase;
 }
 .shopCart-button{
+    margin-top: 11px;
     padding: 20px 40px;
     outline: none;
     background-color: #ffffff;
@@ -102,5 +103,18 @@
     &:hover{
         color: #f16d7f;
         border-color: #f16d7f;
+    }
+}
+.basket-button{
+    border: 1px solid #eaeaea;
+    padding: 20px 75px;
+    color: #4a4a4a;;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover{
+        border: 1px solid #f16d7f;
+        color: #f16d7f;
     }
 }

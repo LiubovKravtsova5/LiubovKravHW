@@ -313,4 +313,25 @@ h4 {
   font-weight: 400;
   margin-left: 32px;
 }
+
+.golden {
+  color: #e4af48;
+  font-size: 12px;
+}
+
+.basket-item_price {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.total-price {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=custom-fonts.css.map */
