@@ -1,16 +1,3 @@
-.color-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 100px;
-  background-color: hotpink;
-  width: 500px;
-  margin: 10px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -366,6 +353,42 @@ h4 {
   text-transform: uppercase;
 }
 
+.brand-text {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  margin-left: 73px;
+  color: #222222;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+}
+
+.brand-text_pink {
+  color: #222222;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+  color: #f16d7f;
+}
+
+.brand-text_pink {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+}
+
 .p-right__15px {
   padding-right: 15px;
 }
@@ -477,7 +500,6 @@ header {
 }
 
 .shopCart-button {
-  width: 100%;
   margin-top: 11px;
   padding: 20px 40px;
   outline: none;
@@ -690,13 +712,13 @@ header {
 
 .accordion-button:not(.collapsed) {
   color: #222222;
-  background-color: #fff;
+  background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .accordion-button:focus {
-  background-color: #fff;
+  background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -760,8 +782,7 @@ header {
 }
 
 .noUnderline {
-  -webkit-text-decoration: n;
-          text-decoration: n;
+  text-decoration: none;
 }
 
 .w100px {
@@ -2004,5 +2025,29 @@ details[open] > summary::after {
 .galery-scale4:hover {
   -webkit-transform: translate(10%, 10%) scale(1.2, 1.2);
           transform: translate(10%, 10%) scale(1.2, 1.2);
+}
+
+.logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 36px;
+}
+
+.logo-box:hover .logo-transition {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.logo-transition {
+  position: absolute;
+}
+
+.logo-t {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */

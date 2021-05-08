@@ -297,3 +297,40 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
 }
+.brand-text { 
+  margin-top: 20px;
+   margin-bottom: 12px;
+  margin-left: 73px;   
+  color: #222222;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 300;    
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+  &_pink{
+    color: #222222;
+    font-family: Lato;
+    font-size: 27px;
+    font-weight: 300;    
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.68px;
+    color: #f16d7f;
+  }
+
+}
+.brand-text_pink{
+  margin-top: 20px;
+    margin-bottom: 12px;
+ 
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 27px;
+  font-weight: 400;    
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+  
+
+}
