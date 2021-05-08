@@ -66,24 +66,29 @@ form em {
     }
 }
 
-
+.noUnderline{
+    text-decoration: n;
+}
 
 .w100px{
     width: 100px;
 }
 .weidth_100{
     width: 100%;
+  
 }
 .position__rel{
     position: relative;
+   
 }
 .position__abs_carousel{
     position: absolute;
-    top: 850px;
+    height: 777px;
+    top: 1000px;
 }
 
-.bakcground_grey{
-    background-color: grey;
+.background_grey{
+    background-color:#f7f7f7;;
 }
 .bakcground_white{
     background-color: white;
@@ -255,6 +260,9 @@ details[open] > summary::after {
         font-weight: 700;
         text-transform: uppercase;
     }
+    &_underline{
+        border-bottom: 3px solid #ef5b70;;
+    }
 
 }
 
@@ -384,11 +392,11 @@ details[open] > summary::after {
 }
 .custom-box{
     display: flex;
-    height: 597px;
+    height: 724px;
     max-width: 724px;
 }
 .singlePage-carousel {
-    height: 1200px;
+    height: 1380px;
 }
 
 .custom-container__jc-center {    
@@ -761,18 +769,31 @@ details[open] > summary::after {
     display: flex;
     justify-content: space-between;
 }
-.form input {     
+.form  {     
     width: inherit;  
     height: 45px;
-    border-top-left-radius: 23px;
+    border-radius: 23px;
     border-bottom-left-radius: 23px;
     background-color: #e1e1e1;
-    border: transparent 1px solid;
     padding-left: 18px;
     box-sizing: border-box;
     border-right-width: 0;
+    input{
+        width: 100%;
+   }
 }
-
+.email-indexPage{
+    display: flex;
+    outline: none;
+    padding: 11px 20px;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    background-color: #e1e1e1;
+    border: none;
+}
 
 .brand-info {
     width: 300px;

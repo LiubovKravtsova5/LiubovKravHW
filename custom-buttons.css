@@ -77,9 +77,11 @@
   border-bottom-right-radius: 23px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .shopCart-button {
+  width: 100%;
   margin-top: 11px;
   padding: 20px 40px;
   outline: none;
