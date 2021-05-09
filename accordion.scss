@@ -1,0 +1,45 @@
+.custom-accordion_ol{
+    width: 100%;
+    li::marker{
+        color: #222222;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.accordion-item{
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    padding-left: 16px;
+    
+}
+.accordion-button{
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left:  1rem;
+
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
+.accordion-button::after {   
+    background-image: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #222222;
+    background: none  ;
+    box-shadow: none;
+}
+.accordion-button:focus {
+      background: none  ;
+    box-shadow: none;
+}
+
+.accordion-body{
+    display: flex;
+}
