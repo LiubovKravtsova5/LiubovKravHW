@@ -1,0 +1,33 @@
+ #expand-btn {
+            margin: 0 3px;
+            display: flex;
+            background-color: white;
+            color: pink;
+            border: 1px solid pink;
+        }
+
+
+
+        #isexpanded,
+        .expandable {
+            display: none;
+        }
+
+        #isexpanded2,
+        .expandable2 {
+            display: none;
+        }
+
+
+
+        #isexpanded:checked~div.expandable {
+            display: block;
+            height: 200px;
+            background: pink;
+        }
+
+        #isexpanded2:checked~div.expandable2 {
+            display: block;
+            height: 200px;
+            background: pink;
+        }

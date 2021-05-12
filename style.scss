@@ -12,6 +12,7 @@ p {
 }
 
 ul{
+    margin: 0;
     padding: 0;
 }
 ol{
@@ -29,7 +30,7 @@ form em {
 @import "custom-buttons.scss";
 @import "shopCart.scss";
 @import "accordion.scss";
-
+@import "Siderbar.scss";
 
 .custom-container{
     overflow: auto;
@@ -56,6 +57,11 @@ form em {
         display: flex;
         justify-content: space-between;
     }
+    &__jc-center{
+        display: flex;
+        justify-content: center;
+    }
+   
 }
 
 .noUnderline{
@@ -1037,4 +1043,20 @@ details[open] > summary::after {
    padding-right: 20px;
    padding-bottom: 20px;
    padding-top: 5px;
+}
+.page-link{
+    text-decoration: none;
+    color: #c4c4c4;
+    font-family: Lato;
+    font-size: 16px;    
+    font-weight: bold;
+    line-height: 26px;
+    &:hover{
+        color: #ef5b70;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+    }
+}
+.hiden-checkbox{
+    display: none;
 }

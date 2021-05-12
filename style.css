@@ -11,6 +11,7 @@ p {
 }
 
 ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -389,6 +390,16 @@ h4 {
   letter-spacing: 0.68px;
 }
 
+.trending_legend {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 .p-right__15px {
   padding-right: 15px;
 }
@@ -407,6 +418,10 @@ h4 {
 
 .margin-top__90px {
   margin-top: 90px;
+}
+
+.margin-top__60px {
+  margin-top: 60px;
 }
 
 .weidth_100 {
@@ -505,6 +520,7 @@ header {
   outline: none;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  border-radius: 3px;
 }
 
 .shopCart-button:hover {
@@ -634,6 +650,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 44px 0;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .order-form {
@@ -686,11 +705,17 @@ header {
   font-weight: 700;
 }
 
+.custom-accordion_ul {
+  list-style-type: none;
+}
+
+.custom-accordion_ul li {
+  margin-bottom: 18px;
+}
+
 .accordion-item {
   margin-bottom: 0;
   border: none;
-  border-bottom: 1px solid #e8e8e8;
-  padding-left: 16px;
 }
 
 .accordion-button {
@@ -699,7 +724,6 @@ header {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 1rem;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -727,6 +751,125 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.accordion-body_text {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.siderbar .accordion-header {
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.siderbar-link {
+  text-decoration: none;
+}
+
+.siderbar-link_text {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 1rem 1.25rem;
+}
+
+.siderbar {
+  width: 245px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.siderbar_link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: center;
+}
+
+.accessories_link {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+.top-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 50px;
+}
+
+.trending:last-of-type {
+  margin-right: 0;
+}
+
+.top-filter_item {
+  width: 262px;
+}
+
+/* Style the button when the checkbox is checked */
+input:checked + label {
+  color: #f16d7f;
+}
+
+/* Style the button */
+.trending label {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 9px;
+  border-right: 1px solid #ebebeb;
+  padding-right: 9px;
+}
+
+.trending label:last-of-type {
+  border-right: none;
+}
+
+.top-filter_item input#range {
+  width: 100%;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: green;
+}
+
+.fieldset-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.fieldset-size label {
+  padding-left: 9px;
+  width: 47px;
+  text-transform: uppercase;
 }
 
 .custom-container {
@@ -779,6 +922,15 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.box__displeyFlex__jc-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .noUnderline {
@@ -2049,5 +2201,24 @@ details[open] > summary::after {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-top: 5px;
+}
+
+.page-link {
+  text-decoration: none;
+  color: #c4c4c4;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.page-link:hover {
+  color: #ef5b70;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.hiden-checkbox {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
