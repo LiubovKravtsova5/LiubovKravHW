@@ -9,11 +9,17 @@
   font-weight: 700;
 }
 
+.custom-accordion_ul {
+  list-style-type: none;
+}
+
+.custom-accordion_ul li {
+  margin-bottom: 18px;
+}
+
 .accordion-item {
   margin-bottom: 0;
   border: none;
-  border-bottom: 1px solid #e8e8e8;
-  padding-left: 16px;
 }
 
 .accordion-button {
@@ -22,7 +28,6 @@
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 1rem;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -50,5 +55,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.accordion-body_text {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.siderbar .accordion-header {
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.siderbar-link {
+  text-decoration: none;
+}
+
+.siderbar-link_text {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 1rem 1.25rem;
 }
 /*# sourceMappingURL=accordion.css.map */

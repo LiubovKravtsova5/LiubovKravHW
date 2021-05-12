@@ -1,0 +1,52 @@
+.custom-container_one-column{
+    overflow: auto;
+    max-width: 1140px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box__displeyFlex__jc-sb{
+    display: flex;
+    justify-content: stretch;
+}
+
+.hiden-radio {
+    display: none;
+}
+#expand-btn{
+    border: 1px solid black;
+    width: 100px;
+}
+.products-list{
+    display: flex;
+    flex: 1;    
+    display: none;
+    top:0;
+    height: 130px;
+}
+   
+
+input[type=radio]:checked+ label+ div {
+    display: flex;
+}
+    
+.Green1 {    
+    background: green; 
+}
+.Green2 {    
+    background: yellow;    
+}
+.Green3 {
+    background: pink; 
+}
+
+  
+  /*# sourceMappingURL=styleEx.css.map */
+  
+  
+  
+  
+   
+   
+   

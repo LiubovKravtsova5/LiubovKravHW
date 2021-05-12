@@ -7,21 +7,23 @@
         font-weight: 700;
     }
 }
+.custom-accordion_ul{
+    list-style-type: none;
+    li{
+        margin-bottom: 18px;
+    }
+}
 
 .accordion-item{
     margin-bottom: 0;
-    border: none;
-    border-bottom: 1px solid #e8e8e8;
-    padding-left: 16px;
-    
+    border: none;   
 }
 .accordion-button{
     color: #222222;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase;
-    padding-left:  1rem;
+    text-transform: uppercase;   
 
 }
 .accordion-button:not(.collapsed)::after {
@@ -42,4 +44,26 @@
 
 .accordion-body{
     display: flex;
+}
+.accordion-body_text{
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+.siderbar .accordion-header{
+    border-left: 5px solid #ef5b70;
+    border-bottom: 1px solid #ebebeb;
+    
+}
+.siderbar-link{
+    text-decoration: none;
+}
+.siderbar-link_text{
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1rem 1.25rem;
 }

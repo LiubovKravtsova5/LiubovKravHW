@@ -361,4 +361,14 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.68px;
 }
+
+.trending_legend {
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=custom-fonts.css.map */
