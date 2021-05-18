@@ -19,9 +19,14 @@
     <header>
         <div class="custom-container">
             <div class="header-left">
-                <a href="index.html"><img class="brand-logo" src="img/BRAND.svg" alt="brand-logo">
+                <a class="index-link" href="index.html">
+                    <div class="logo-box">
+                        <div class="logo-transition"><img class="logo-t" src="img/B_for_brend.svg" alt="brand-logo">
+                        </div>
+                        <p class="brand-text">bran</p>
+                        <p class="brand-text_pink">d</p>
+                    </div>
                 </a>
-
 
                 <div class="browse-box">
                     <div class="browse">
@@ -131,43 +136,41 @@
 
                                 </div>
                                 <a href="checkout.html">
-                                    <button class="shopCart-button  w100px">Checkout</button>
+                                    <button class="shopCart-button weidth_100">Checkout</button>
                                 </a>
                                 <a href="shopping Cart.html">
-                                    <button class="shopCart-button  w100px">Go to cart</button>
+                                    <button class="shopCart-button weidth_100">Go to cart</button>
                                 </a>
 
                             </div>
                         </div>
                     </details>
                 </div>
-                <div class="browse-box">
-                    <div class="browse">
-                        <details>
-                            <summary>
-                                My Account
-                            </summary>
-                            <div class="browse-list__box">
-                                <div class="browse_mega-item">
-                                    <h3 class="item-heading">user</h3>
-                                    <ul>
-                                        <li class="mega-list"><a class=mega-link href="#"> bonuses </a></li>
-                                        <li class="mega-list"><a class=mega-link href="#"> access settings</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="browse_mega-item">
-                                    <h3 class="item-heading">previous orders</h3>
-                                    <ul>
-                                        <li class="mega-list"><a class=mega-link href="#">tracked orders</a></li>
-                                        <li class="mega-list"><a class=mega-link href="#">delivered orders</a></li>
-                                    </ul>
-                                </div>
+                <div class="account">
+                    <details>
+                        <summary>
+                            My Account
+                        </summary>
+                        <div class="account-list__box">
+                            <div class="account_mega-item">
+                                <h3 class="item-heading">user</h3>
+                                <ul>
+                                    <li class="mega-list"><a class=mega-link href="#"> bonuses </a></li>
+                                    <li class="mega-list"><a class=mega-link href="#"> access settings</a></li>
+                                </ul>
                             </div>
-                        </details>
-                    </div>
 
+                            <div class="account_mega-item">
+                                <h3 class="item-heading">previous orders</h3>
+                                <ul>
+                                    <li class="mega-list"><a class=mega-link href="#">tracked orders</a></li>
+                                    <li class="mega-list"><a class=mega-link href="#">delivered orders</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
                 </div>
+
             </div>
 
 
@@ -623,7 +626,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="top-filter_item trending">
+                            <div class="top-filter_item">
                                 <fieldset>
                                     <legend>
                                         <p class="trending_legend">Trending now</p>
@@ -678,19 +681,19 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class=" top-filter_item">
+                            <div class=" top-filter_item ">
 
                                 <fieldset>
                                     <legend>
                                         <p class="trending_legend">pRICE</p>
                                     </legend>
-                                    <input id="range" type="range" min="0" max="1000" value="700" step="0.1">
+                                    <input id="price-range" type="range" min="0" max="1000" value="700" step="0.1">
 
                                 </fieldset>
-                                <div class="box__displeyFlex__jc-sb">
+                                <label for="price-range" class="box__displeyFlex__jc-sb">
                                     <p>$0</p>
                                     <p>$1000</p>
-                                </div>
+                                    </lavel>
 
                             </div>
 
@@ -698,6 +701,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="sortBy">
+                <div class="sortBy_item">
+                    <button class="sort-button">Sort By</button>
+                    <select class="sort_select">
+                        <option value="sort-by-date">Fresh at first</option>
+                        <option value="sort-by-low-ptice">Low price at first</option>
+                        <option value="sort-by-high-ptice">High price at first</option>
+                    </select>
+                </div>
+                <div class="sortBy_item">
+                    <button class="show-button">Show</button>
+                    <select class="sort_select">
+                        <option value="09items">09</option>
+                        <option value="18items">18</option>
+                        <option value="27items">27</option>
+                    </select>
+                </div>
+            </div>
+
 
             <div class="product ">
                 <div class="container">
@@ -871,7 +894,60 @@
         </div>
     </div>
 
+    <div class="offer">
+        <div class="offer-background">
+            <div class="custom-container">
+                <div class="odds-container">
+                    <div class="odds-item">
+                        <div class="odds-ico-box50">
+                            <img class="odds-ico" src="img/Delivery-ico.svg" alt="delivery" width="45px"
+                                vertical-align="top" />
+                        </div>
 
+                        <div class="odds-text ">
+                            <h4>Sales & discounts </h4>
+                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                                with
+                                extensive
+                                models </p>
+                        </div>
+                    </div>
+                    <div class="odds-item">
+                        <div class="odds-ico-box50">
+                            <img class="odds-ico" src="img/discounts-ico.svg" alt="discounts" width="45px"
+                                vertical-align="top" />
+                        </div>
+
+                        <div class="odds-text ">
+                            <h4>Sales & discounts </h4>
+                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                                with
+                                extensive
+                                models </p>
+                        </div>
+                    </div>
+                    <div class="odds-item">
+                        <div class="odds-ico-box50">
+                            <img class="odds-ico" src="img/quality-ico.svg" alt="quality" width="45px"
+                                vertical-align="top" />
+                        </div>
+
+
+                        <div class="odds-text ">
+                            <h4>Quality assurance</h4>
+                            <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                                with
+                                extensive
+                                models </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
 
 
     <footer>
