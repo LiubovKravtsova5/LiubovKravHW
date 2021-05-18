@@ -827,6 +827,7 @@ header {
 
 .top-filter_item {
   width: 262px;
+  margin-bottom: 40px;
 }
 
 /* Style the button when the checkbox is checked */
@@ -835,21 +836,21 @@ input:checked + label {
 }
 
 /* Style the button */
-.trending label {
+.top-filter_item label, .top-filter_item input {
   color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 9px;
+  margin-top: 13px;
   border-right: 1px solid #ebebeb;
   padding-right: 9px;
 }
 
-.trending label:last-of-type {
+.top-filter_item label:last-of-type, .top-filter_item input:last-of-type {
   border-right: none;
 }
 
-.top-filter_item input#range {
+.top-filter_item input#price-range {
   width: 100%;
 }
 
@@ -870,6 +871,40 @@ input[type=range]::-moz-range-track {
   padding-left: 9px;
   width: 47px;
   text-transform: uppercase;
+}
+
+.sortBy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.sortBy_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+}
+
+.sort-button, .show-button, .sort_select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  height: 29px;
+  font-weight: 400;
+  padding: 0 12px;
+  background-color: transparent;
+  border: none;
+}
+
+.sort-button, .show-button {
+  border-right: 1px solid #ebebeb;
 }
 
 .custom-container {
@@ -1073,6 +1108,78 @@ input[type=range]::-moz-range-track {
   color: #f16d7f;
 }
 
+.account {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+
+.account:hover {
+  background-color: #ffffff;
+}
+
+.account:hover summary {
+  color: #f16d7f;
+}
+
+.account:hover summary::after {
+  color: #f16d7f;
+}
+
+.account summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.38px;
+  padding-left: 19px;
+}
+
+.account-list__box {
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.account ul {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.account li {
+  color: #232323;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+}
+
+.account li:hover {
+  color: #f16d7f;
+}
+
+.account summary::after {
+  content: '\25B6';
+  color: #ffffff;
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
 summary::-webkit-details-marker {
   display: none;
 }
@@ -1105,20 +1212,6 @@ details[open] > summary::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.account {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 0.38px;
-}
-
-.account:after {
-  content: '\25BC';
-  padding-right: 0.5em;
-  color: #ffffff;
-  padding-left: 10px;
 }
 
 .menu-container {
@@ -1651,6 +1744,10 @@ details[open] > summary::after {
   margin-bottom: 0;
 }
 
+.offer {
+  height: 530px;
+}
+
 .offer-background {
   background-color: #222224;
   width: 100%;
@@ -1702,10 +1799,10 @@ details[open] > summary::after {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 50px auto;
 }
 
 .odds-box {
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1727,11 +1824,25 @@ details[open] > summary::after {
           justify-content: center;
 }
 
+.odds-ico-box50 {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
 .odds {
   width: 260px;
   padding-right: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.odds-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer-top {
@@ -2220,5 +2331,19 @@ details[open] > summary::after {
 
 .hiden-checkbox {
   display: none;
+}
+
+.product-row {
+  width: 100%;
+}
+
+.index-link {
+  text-decoration: none;
+}
+
+.odds-item {
+  display: block;
+  text-align: center;
+  margin: 90px 20px 115px 20px;
 }
 /*# sourceMappingURL=style.css.map */

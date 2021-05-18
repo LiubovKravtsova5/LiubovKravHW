@@ -26,6 +26,7 @@
 }
 .top-filter_item{
   width: 262px;
+  margin-bottom: 40px;
 }
 
 /* Style the button when the checkbox is checked */
@@ -34,19 +35,19 @@ input:checked + label {
 }
 
 /* Style the button */
-.trending label {
+.top-filter_item label, .top-filter_item input {
   color: #6f6e6e;
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 9px;  
+  margin-top: 13px;  
   border-right: 1px solid #ebebeb;
   padding-right: 9px;
   &:last-of-type{
     border-right:none;
   }
 }
-.top-filter_item input#range {
+.top-filter_item input#price-range {
   width: 100%;
 }
 input[type=range]::-moz-range-track {
@@ -62,6 +63,33 @@ input[type=range]::-moz-range-track {
   width: 47px;
   text-transform: uppercase;
 
+}
+.sortBy{
+  display: flex;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.sortBy_item{
+  box-sizing: border-box; 
+  height: 30px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+}
+.sort-button, .show-button,.sort_select {
+  
+  box-sizing: border-box;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  height: 29px;
+  font-weight: 400;  
+  padding: 0 12px; 
+  background-color: transparent;
+  border: none;
+}
+.sort-button, .show-button {  
+  border-right: 1px solid #ebebeb;
 }
 
 
